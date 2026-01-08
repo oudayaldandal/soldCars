@@ -26,6 +26,7 @@ public class CarInMemoryRepository implements CarRepository {
         return Optional.ofNullable(storage.get(id));
     }
 
+
     @Override
     public List<Car> findAll() {
         return new ArrayList<>(storage.values());
