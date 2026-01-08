@@ -31,7 +31,6 @@ public class CarInMemoryRepository implements CarRepository {
         return new ArrayList<>(storage.values());
     }
 
-
     @Override
     public boolean existsById(String id) {
         return storage.containsKey(id);
